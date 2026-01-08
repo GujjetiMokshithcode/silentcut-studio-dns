@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -11,6 +13,13 @@ export default function PrivacyPage() {
         <div className="min-h-screen bg-black text-white selection:bg-primary/20">
             <JsonLd type="WebPage" />
             <div className="container mx-auto px-4 py-20 max-w-4xl">
+                <Link
+                    href="/"
+                    className="inline-flex items-center text-white/50 hover:text-white mb-8 transition-colors group"
+                >
+                    <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                    Back to Home
+                </Link>
                 <div className="mb-12">
                     <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-white/70 mb-6">
                         Privacy First
@@ -60,7 +69,7 @@ export default function PrivacyPage() {
                     <section>
                         <h2 className="text-2xl font-semibold mb-4 text-white">5. Contact Us</h2>
                         <p className="text-white/70 leading-relaxed">
-                            If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:mokshith.icon4u@gmail.com" className="text-primary hover:underline">mokshith.icon4u@gmail.com</a>
+                            If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:silentcut@silentcut.studio" className="px-2 py-1 rounded bg-primary/10 text-primary hover:bg-primary/20 transition-colors font-medium ml-1">silentcut@silentcut.studio</a>
                         </p>
                     </section>
                 </div>
