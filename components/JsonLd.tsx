@@ -66,7 +66,7 @@ export function JsonLd({ type }: JsonLdProps) {
             foundingDate: '2024',
             contactPoint: {
                 '@type': 'ContactPoint',
-                email: 'mokshith.icon4u@gmail.com',
+                email: 'silentcut@silentcut.studio',
                 contactType: 'Customer Support',
             },
             sameAs: [],

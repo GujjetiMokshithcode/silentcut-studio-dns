@@ -1,0 +1,13 @@
+# llms.txt — SilentCut
+
+# Product overview
+SilentCut is a deterministic audio processing tool that removes long and
+unnatural pauses from AI-generated voices and recorded speech.
+It does not use artificial intelligence.
+
+## Primary page
+https://silentcut.studio/
+
+# Description
+The homepage explains the problem of unnatural pauses in narration
+and how SilentCut fixes them using precise timeline compression.
