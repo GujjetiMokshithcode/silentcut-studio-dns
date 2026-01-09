@@ -26,27 +26,49 @@ const siteUrl = "https://silentcut.studio";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Remove Pauses from ElevenLabs & AI Voices | SilentCut Studio",
+    default: "SilentCut Studio - Remove Pauses & Dead Air from Audio Instantly",
     template: "%s | SilentCut Studio",
   },
-  description: "Fix ElevenLabs pause issues instantly. Remove unnatural pauses from AI voice audio in seconds. Browser-based, privacy-first, 100% free to try.",
+  description: "Remove pauses, dead air, and awkward silences from any audio file in seconds. Perfect for podcasters, YouTubers, AI voice users, and content creators. 100% free, browser-based, privacy-first.",
   keywords: [
+    // General audio editing
+    "remove pauses from audio",
+    "remove dead air from audio",
+    "remove silence from audio",
+    "audio silence remover",
+    "audio pause remover",
+    "cut silences from audio",
+    "audio trimmer online",
+    "free audio editor",
+
+    // Podcasting
+    "podcast audio cleanup",
+    "remove pauses from podcast",
+    "podcast editing tool",
+    "podcast silence remover",
+    "clean up podcast audio",
+
+    // Content creators
+    "youtube audio cleanup",
+    "remove dead air youtube",
+    "voiceover editing tool",
+    "content creator audio tool",
+    "audiobook editing",
+
+    // AI voice specific
     "remove pauses from elevenlabs",
     "fix elevenlabs pause issues",
-    "elevenlabs audio sounds rushed",
     "ai voice cleanup",
-    "synthetic voice post-processing",
     "remove pauses from ai voice",
-    "clean elevenlabs audio",
-    "fix ai voice pacing",
     "elevenlabs post-processing",
-    "remove dead air from ai voice",
-    "murf voice pause issues",
-    "google tts pause problems",
-    "microsoft azure voice cleanup",
     "text to speech pause removal",
-    "ai voice post-processing tools",
-    "make synthetic voices sound human"
+    "synthetic voice cleanup",
+
+    // Technical
+    "browser audio editor",
+    "online audio editor free",
+    "waveform editor",
+    "client-side audio processing"
   ],
   authors: [{ name: "SilentCut Studio", url: siteUrl }],
   creator: "SilentCut Studio",
@@ -67,21 +89,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "SilentCut Studio",
-    title: "Remove Pauses from ElevenLabs & AI Voices | SilentCut Studio",
-    description: "Fix ElevenLabs pause issues instantly. Remove unnatural pauses from AI voice audio.",
+    title: "SilentCut Studio - Remove Pauses & Dead Air from Audio Instantly",
+    description: "Remove pauses from podcasts, YouTube videos, AI voices, and more. Free, browser-based, privacy-first audio editor.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SilentCut - Remove Pauses from AI Voice Audio",
+        alt: "SilentCut Studio - Remove Pauses from Audio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Remove Pauses from ElevenLabs & AI Voices | SilentCut Studio",
-    description: "Fix ElevenLabs pause issues instantly. Privacy-first, 100% free.",
+    title: "SilentCut Studio - Remove Pauses from Audio Instantly",
+    description: "Remove dead air from podcasts, YouTube, AI voices. Free & browser-based.",
     images: ["/og-image.png"],
     creator: "@silentcutstudio",
   },
@@ -89,7 +111,7 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   category: "technology",
-  classification: "AI Voice Audio Editor",
+  classification: "Audio Editor",
   applicationName: "SilentCut Studio",
   referrer: "origin-when-cross-origin",
   formatDetection: {

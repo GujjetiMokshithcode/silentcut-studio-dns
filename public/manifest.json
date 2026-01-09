@@ -1,0 +1,35 @@
+{
+    "name": "SilentCut Studio",
+    "short_name": "SilentCut",
+    "description": "Remove pauses and dead air from audio files instantly. 100% browser-based, privacy-first audio editing tool.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "utilities",
+        "productivity",
+        "music"
+    ],
+    "lang": "en",
+    "dir": "ltr"
+}
