@@ -145,13 +145,13 @@ export function AudioEditor({
                     <div className="flex flex-col gap-6 h-full overflow-y-auto lg:overflow-visible">
                         {/* Waveform Card */}
                         <motion.div
-                            className="flex-1 min-h-[300px] bg-white/[0.02] border border-white/10 rounded-2xl p-6 flex flex-col relative overflow-hidden group"
+                            className="flex-1 min-h-[250px] sm:min-h-[300px] bg-white/[0.02] border border-white/10 rounded-2xl p-4 sm:p-6 flex flex-col relative overflow-hidden group"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                         >
                             {/* Decorative background gradients */}
-                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-                            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
                             <div className="flex-1 relative z-10 flex flex-col justify-center">
                                 <WaveformDisplay

@@ -65,7 +65,7 @@ export function SettingsModal({
                             <label className="text-sm font-medium text-white/90">
                                 Silence Threshold
                             </label>
-                            <span className="text-sm text-cyan-400 font-mono">
+                            <span className="text-sm text-white font-mono">
                                 {settings.threshold} dB
                             </span>
                         </div>
@@ -87,7 +87,7 @@ export function SettingsModal({
                             <label className="text-sm font-medium text-white/90">
                                 Minimum Duration
                             </label>
-                            <span className="text-sm text-cyan-400 font-mono">
+                            <span className="text-sm text-white font-mono">
                                 {settings.minPauseDuration.toFixed(1)} s
                             </span>
                         </div>

@@ -49,9 +49,12 @@ export function PlaybackControls({
                         <SkipBack className="w-5 h-5" />
                     </Button>
 
-                    <Button size="lg" onClick={onPlayPause} className="w-14 h-14">
-                        {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
-                    </Button>
+                    <button
+                        onClick={onPlayPause}
+                        className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-white/90 transition-colors"
+                    >
+                        {isPlaying ? <Pause className="w-5 h-5 text-black" /> : <Play className="w-5 h-5 text-black ml-0.5" />}
+                    </button>
 
                     <Button variant="ghost" size="icon" onClick={onSkipForward}>
                         <SkipForward className="w-5 h-5" />
@@ -59,13 +62,19 @@ export function PlaybackControls({
                 </div>
 
                 {/* Volume & Speed */}
-                <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 sm:gap-4">
+                    {/* Volume - hidden on mobile, visible on sm+ */}
+                    <div className="hidden sm:flex items-center gap-2">
                         <Button variant="ghost" size="icon" onClick={onMuteToggle}>
                             {isMuted || volume === 0 ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
                         </Button>
                         <Slider value={[isMuted ? 0 : volume]} max={100} step={1} onValueChange={([v]) => onVolumeChange(v)} className="w-20" />
                     </div>
+
+                    {/* Mute button only on mobile */}
+                    <Button variant="ghost" size="icon" onClick={onMuteToggle} className="sm:hidden">
+                        {isMuted || volume === 0 ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+                    </Button>
 
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
